@@ -1,6 +1,13 @@
 color 0a
 
-python E:\CubeStatistica\LessonsAndBooks\Windows-Time-Scheduler-Basic-Project-1\Production-Script-Update-DataCSV-File.py
+:: location of your anaconda dir.
+set root=C:\Users\Cube Statistica\anaconda3
+
+:: Call the Anaconda prompt.
+call %root%\Script\activate.bat
+
+:: Run the code using the anaconda python installation in anaconda prompt.
+%root%\python.exe "E:\CubeStatistica\LessonsAndBooks\Windows-Time-Scheduler-Basic-Project-1\Production-Script-Update-DataCSV-File.py"
 
 ::pause :: the two colons comments the line of code - but only that line of code
 
