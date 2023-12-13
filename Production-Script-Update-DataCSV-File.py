@@ -16,6 +16,7 @@ df = pd.DataFrame(
 )
 df["datetime"] = datetime_now_str
 df["seconds"] = datetime_now.second
+df["num_rows_added"] = newdata_size
 
 # Load existing Excel file.
 file_path = "Production-database.csv"
