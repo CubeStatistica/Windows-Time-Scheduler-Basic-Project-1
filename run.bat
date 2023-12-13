@@ -6,3 +6,4 @@ python Production-Script-Update-DataCSV-File.py
 
 @REM pause This is another way of commenting out but when echo is on which is the default. Can remove @ when echo is off.
 
+pause
