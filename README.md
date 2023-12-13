@@ -38,3 +38,7 @@ PermissionError: [Errno 13] Permission denied: 'Production-database.csv'
 
 6. We will change the batch file to run in Anaconda termal instead of executing in cmd.
 
+7. This option is not working because the user name I choose has a space. Very unintelligent of me. 
+
+8. Going back to trying run it in windows shell cmd using task scheduler.
+
