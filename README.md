@@ -40,5 +40,19 @@ PermissionError: [Errno 13] Permission denied: 'Production-database.csv'
 
 7. This option is not working because the user name I choose has a space. Very unintelligent of me. 
 
-8. Going back to trying run it in windows shell cmd using task scheduler.
+8. Going back to trying run it in windows shell cmd using task scheduler. 
+
+9. Change "configure for" from Windows Vista to Window 10
+
+10. Checked box in General Run with highest privilage. Still not working. This time got the error because cannot simply write python <script_path> need to identify the path to where the python executable exists. however, my path ot the executable has a space in it. That completely messes up when running the shell execution. This was not a problem when running the batch file locally because to run it locally would have to open the folder where the batch file was and double clicked the run.bat file. Because of that did not have to tell the batch file where the python executable was as the code `python <python_script>` would work. Need to find a way either work around the path containg space that points to the python executable or run batch file locally.
+
+11. Wrote the line in run.bat file which sets the current directory to where the batch file is located.  This allowed the batch file to run as if running locally. Now the code `python <python_script>` in batch file works. Found this using Chatgpt:
+
+rem The next line is optional and helps to set the current directory to the script's directory
+rem cd /d %~dp0
+
+12. Using the above the code now works in task scheduler when task is scheduled. Though most likely will not work if the csv file to write to is opened. Need to properly test this. Otherwise it now works! Added 3 rows now at row 201.
+
+
+
 
