@@ -53,6 +53,8 @@ rem cd /d %~dp0
 
 12. Using the above the code now works in task scheduler when task is scheduled. Though most likely will not work if the csv file to write to is opened. Need to properly test this. Otherwise it now works! Added 3 rows now at row 201.
 
+13. Code now completely works as it was expected to run and execute at rows 205. Can move on to building dashboard in python. At row 209 :) Changing task scheduler settings to mid day. Executes at 2:00pm daily and repeats itself every 5min for 15mins.
+
 
 
 
