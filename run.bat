@@ -7,4 +7,5 @@ python E:\CubeStatistica\LessonsAndBooks\Windows-Time-Scheduler-Basic-Project-1\
 
 @REM pause This is another way of commenting out but when echo is on which is the default. Can remove @ when echo is off.
 
-pause
+
+
